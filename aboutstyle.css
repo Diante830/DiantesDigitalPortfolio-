@@ -48,19 +48,22 @@ main{
 }
 
 .toggle-button {
+  position: fixed;
+  left: 40px;
+  top: -12px;
   margin: 20px;
   padding: 10px 20px;
   cursor: pointer;
   border: none;
+  background-color: none;
   color: #2D457D;
   border-radius: 5px;
-  position: relative;
   display: inline-block;
 }
 
 #moon-icon{
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 #home-logo{
@@ -80,6 +83,24 @@ main{
   right:2%;
   bottom: auto;
   
+}
+
+a{
+  text-decoration: none;
+  color: #2D457D;
+}
+
+a:hover {
+  color: #F05757;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+  color: #2D457D;
 }
 
 /* footer divs*/
@@ -112,7 +133,7 @@ footer{
 }
 
 #footer-pagelinks{
-  width: 168px; 
+  width: 200px; 
   height: 77px; 
   left: 229px; 
   top: 49px; 
@@ -192,39 +213,38 @@ hr {
   box-sizing: border-box;
   list-style: none;
 }
+
 body,
 html {
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
   color: #2D457D;
   font-weight: normal;
-  font-family: "Gruppo-Regular";
+  font-family: "Montserrat-SemiBold";
   display: inline-block;
 }
 
 #ham-menu {
   display: none;
+
 }
 label[for="ham-menu"] {
-  display: block;
+  display: inline-flex;
   position: fixed;
   top: 24px;
   left: 20px;
   z-index: 999;
   width: 60px;
   height: 60px;
-  border-radius: 15px;
-  border: 2px solid var(--border-color);
 }
 .ham-menu {
-  width: 50vw;
+  width: 80vw;
   height: 100%;
   position: fixed;
   top: 0;
   visibility: hidden;
   transform: translate(-110%);
   z-index: 998;
-  background-color: var(--lightest-green);
   transition: 1s;
   display: flex;
   justify-content: center;
@@ -232,21 +252,21 @@ label[for="ham-menu"] {
 }
 .ham-menu > ul {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  padding: 20px;
-  height: 50%;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 200px;
+  height: 60%;
 }
 .ham-menu > ul > li {
-  font-size: 5rem;
+  font-size: 4rem;
   white-space: nowrap;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   cursor: pointer;
-  color: rgb(97, 97, 97);
+  color: #F05757;
 }
 #ham-menu:checked + label {
   background-color: transparent;
-  border-color: var(--dark-green);
+  border-color: none;
 }
 #ham-menu:checked ~ div.ham-menu {
   transform: translate(0px);
@@ -256,17 +276,19 @@ label[for="ham-menu"] {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--dark-green);
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+  box-shadow: 3px 2px 2px #e2e2e2;
+  background-color: #f3f3f3;
   z-index: 997;
   opacity: 0;
   visibility: hidden;
   display: none;
   transition: 500ms;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 25px;
 }
 #ham-menu:checked ~ div.full-page-green {
   display: block;
@@ -288,7 +310,7 @@ label[for="ham-menu"] {
   margin: 10px 0 5px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
-  background-color: var(--border-color);
+  background-color: none;
   transition: 500ms;
   transform-origin: right center;
 }
@@ -302,7 +324,7 @@ label[for="ham-menu"] {
   transform-origin: left center;
 }
 #ham-menu:checked + label span {
-  background-color: var(--dark-green);
+  background-color: none;
 }
 #ham-menu:checked + label span:nth-child(2),
 #ham-menu:checked + label span:nth-child(5) {
@@ -322,24 +344,23 @@ label[for="ham-menu"] {
 }
 p {
   display: inline;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
   font-family: "Gruppo-Regular";
   
 }
-
-a {
+#menulinks {
   font-size: 1.6rem;
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "Gruppo-Regular";
+  font-family: "Cirqua";
   display: inline;
   font-weight: bold;
-  padding: 7px;
-  color: var(--icon-hover-bg);
+  padding: 50px;
+  color: #2D457D;
   text-decoration: none;
 }
 a::after {
@@ -355,14 +376,14 @@ a::after {
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-family: "Cirqua";
 }
 .title {
   font-size: 3rem;
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "Gruppo-Regular";
+  font-family: "Cirqua";
   color: var(--icon-hover-bg);
   padding: 10px;
 }
@@ -378,4 +399,38 @@ a::after {
 }
 .bold-text {
   font-weight: bold;
+}
+
+#myBtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px, #2d2d2d;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.subsection{
+  width: 216px; 
+  height: 35px; 
+  color: #2D457D; 
+  font-size: 24px; 
+  font-family: "Cirqua"; 
+  font-weight: 400; 
+  word-wrap: break-word
+}
+
+.aboutinfo{
+  display: inline;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  word-spacing: 0.5em;
+  letter-spacing: 0.1em;
+  font-family: "Gruppo-Regular"; 
 }
