@@ -26,7 +26,7 @@
 body {
   transition: background-color 0.3s, color 0.3s;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
 }
 
@@ -67,6 +67,8 @@ main{
   margin-left: 40%;
   margin-right: 10%;
   margin-top: -440px;
+  background-size: cover;
+  
 }
 
 .toggle-button {

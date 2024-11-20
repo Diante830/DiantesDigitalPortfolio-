@@ -69,3 +69,13 @@ function showNav() {
   $(".main-navigation-scroll").addClass("shadow");
 };
 
+const carousel = document.querySelector('.carousel');
+        const cardWidth = document.querySelector('.carousel-card').offsetWidth + 20; // Including margin
+
+        function scrollLeft() {
+            carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        }
+
+        function scrollRight() {
+            carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        }

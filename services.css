@@ -26,14 +26,14 @@
 body {
     transition: background-color 0.3s, color 0.3s;
     width: 100%;
-    height: 100vh;
-     background-size: cover;
+    height: 100%;
+    background-size: cover;
 }
 
 /*Dark Mode Css*/
 
 body.light-mode {
-    background: linear-gradient(rgb(255, 255, 255), #ededed);
+    background: linear-gradient(rgb(255, 255, 255), #f3f3f3);
     color: #000000;
 }
 
@@ -41,6 +41,12 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+
+main{
+   padding-left: 25%;
+   padding-right: 25%;
+   margin-top: -250px;
+  }
 
 h1 {
     text-align: center;
@@ -378,6 +384,16 @@ p {
     font-family: "Gruppo-Regular";
 }
 
+.info-section {
+    display: inline;
+    font-size: 1.0rem;
+    line-height: 1.0em;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    font-family: "Gruppo-Regular";
+}
+
+
 #menulinks {
     font-size: 1.6rem;
     line-height: 1.5em;
@@ -446,3 +462,79 @@ a::after {
 /*End of Menu CSS*/
 
 /*Carousel Starts*/
+
+
+.carousel-container {
+    position: relative;
+    width: 2500px;
+    max-width: 800px;
+    overflow: hidden; /* Hide the cards that are out of view */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    width: 2500px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.carousel-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.carousel-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.carousel-card button {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.carousel-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Scroll Buttons */
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+.scroll-button:focus {
+    outline: none;
+}
