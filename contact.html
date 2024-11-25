@@ -7,14 +7,14 @@
     <title>Diante's Digital Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./images/Email Sig Logo white.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/p5.min.js">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
     <script src="./next.js"></script>
 </head>
 
 <body class="light-mode">
 
     <input type="checkbox" id="ham-menu">
-    <label for="ham-menu"> MENU </label>
+    <label for="ham-menu">MENU</label>
     <div class="hide-des">
         <span class="menu-line"></span>
         <span class="menu-line"></span>
@@ -24,20 +24,20 @@
         <span class="menu-line"></span>
 
         <div id="moon-icon">
-        <button class="toggle-button" onclick="toggleDarkMode()">
+            <button class="toggle-button" onclick="toggleDarkMode()">
 
-            <svg width="30" height="30">
-                <path fill="currentColor" d="
+                <svg width="30" height="30">
+                    <path fill="currentColor" d="
                 M 23, 5
                 A 12 12 0 1 0 23, 25
                 A 12 12 0 0 1 23, 5" />
-            </svg>
+                </svg>
 
-        </button>
+            </button>
         </div>
     </div>
-    
-    
+
+
 
     </label>
     <div class="full-page-green"></div>
@@ -52,8 +52,70 @@
         </ul>
     </div>
 
-    <main>
+    <h1>conTact</h1>
+
+    <nav class="main-navigation navbar navbar-expand-lg">
+        <a class="navbar-brand" href=""></a>
         
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:history.back()">back <span class="sr-only">(current) </span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profileimage">socials</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <main>
+        <div class="container">
+            <h3>GOT IDEAS? <br>LETS TEAM UP.</h3>
+            <h5>based in Toronto, ON 📍</h5>
+            <form action="/action_page.php">
+                <label for="fname">FULL NAME:</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address..">
+                <br>
+                <br>
+
+                <label for="Work Type">WORK TYPE:</label>
+                <select id="Work Type" name="Work Type">
+                    <option value="Remote">Remote</option>
+                    <option value="In-Person">In-Person</option>
+                    <option value="Hybrid">Hybrid</option>
+                </select>
+
+                <label for="checkbox">HOW CAN I HELP?</label>
+                <br>
+                <br>
+                <div class="checkboxjobs">
+                <input type="checkbox" id="option1" name="vehicle1" value="Web">
+                <label for="vehicle1"> Web Development</label><br>
+                <input type="checkbox" id="option2" name="vehicle2" value="UX">
+                <label for="vehicle2"> Ux/UI Design</label><br>
+                <input type="checkbox" id="option3" name="vehicle3" value="Logos">
+                <label for="vehicle3"> Logos & Branding</label><br>
+                <br>
+                <input type="checkbox" id="option4" name="vehicle1" value="Packaging">
+                <label for="vehicle1"> Packaging</label><br>
+                <input type="checkbox" id="option5" name="vehicle2" value="Social Media">
+                <label for="vehicle2"> Social Media</label><br>
+                <input type="checkbox" id="option6" name="vehicle3" value="Other">
+                <label for="vehicle3"> Other</label>
+                </div>
+                <br>
+                <br>
+
+                <label for="subject">TELL ME MORE:</label>
+                <textarea id="subject" name="subject" placeholder="type here.." style="height:200px"></textarea>
+
+                <center><input type="submit" value="Let's Get Started"></center>
+            </form>
+        </div>
     </main>
 
     <center>
@@ -67,7 +129,8 @@
                 <div id="footer-pagelinks"><a href="./about.html" id="custom-link">about</a></div>
                 <div id="footer-pagelinks"><a href="./services.html" id="custom-link">services</a></div>
                 <div id="footer-pagelinks"><a href="./contact.html" id="custom-link">contact</a></div>
-                <div id="footer-pagelinks"><a href="https://www.apple.com/ca/app-store/" id="custom-link">Burnsby App</a></div>
+                <div id="footer-pagelinks"><a href="https://www.apple.com/ca/app-store/" id="custom-link">Burnsby
+                        App</a></div>
                 <div id="linebreak">
                     <hr>
                 </div>

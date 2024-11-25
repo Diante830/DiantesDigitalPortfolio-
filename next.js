@@ -79,3 +79,48 @@ const carousel = document.querySelector('.carousel');
         function scrollRight() {
             carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
         }
+
+         document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // Clear previous error messages
+    document.getElementById('error-message').textContent = '';
+
+    // Get form data
+    var fname = document.getElementById('fname').value;
+    var lname = document.getElementById('lname').value;
+    var country = document.getElementById('country').value;
+    var subject = document.getElementById('subject').value;
+
+    // Check if all fields are filled out
+    if (!fname || !lname || !country || !subject) {
+      event.preventDefault();  // Prevent form submission
+      document.getElementById('error-message').textContent = 'Please fill out all fields.';
+      return false;
+    }
+
+    // Optionally, you can add more specific checks, such as name length, etc.
+
+    return true; // Allow form submission if all checks pass
+  });
+emailjs.init("dhazelle@hotmail.com");
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  // Clear previous error messages
+  document.getElementById('error-message').textContent = '';
+
+  // Get form data
+  var fname = document.getElementById('fname').value;
+  var lname = document.getElementById('lname').value;
+  var country = document.getElementById('country').value;
+  var subject = document.getElementById('subject').value;
+
+  // Check if all fields are filled out
+  if (!fname || !lname || !country || !subject) {
+    event.preventDefault();  // Prevent form submission
+    document.getElementById('error-message').textContent = 'Please fill out all fields.';
+    return false;
+  }
+
+  // Optionally, you can add more specific checks, such as name length, etc.
+
+  return true; // Allow form submission if all checks pass
+});
