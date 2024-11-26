@@ -211,31 +211,6 @@ footer{
   word-wrap: break-word;
 }
 
-.fa-behance {
-  background: #F05757;
-  color: white;
-  border-radius: 50%;
-}
-
-.fa-linkedin {
-  background: #F05757;
-  color: white;
-  border-radius: 50%;
-}
-
-.fa-youtube {
-  background: #F05757;
-  color: white;
-  border-radius: 50%;
-}
-
-.fa-instagram {
-  background: #F05757;
-  color: white;
-  border-radius: 50%;
-}
-
-
 hr {
   background-color: #dfdfdf;
   margin-bottom: 35px;
@@ -486,7 +461,14 @@ a::after {
 
 ul.a {
   list-style-type: none;
+  display: inline-block;
   padding: 0%;
+}
+
+ul.b {
+  list-style-type: none;
+  padding: 0%;
+  float: right;
 }
 
 li{
