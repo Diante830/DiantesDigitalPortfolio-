@@ -124,3 +124,13 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
   return true; // Allow form submission if all checks pass
 });
+
+/*
+const splash = document.querySelector('.splash');
+document.addEventListener('DOMContentLoaded', (e)=>{
+  setTimeout(()=>{
+    splash.classList.add('display-none');
+  }, 2000);
+})
+*/
+
