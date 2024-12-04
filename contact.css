@@ -513,6 +513,8 @@ input[type=text], select, textarea {
     border-radius: 25px;
     cursor: pointer;
     width: 200px;
+    font-family: 'Gruppo';
+    font-size: 16px;
   }
   
   input[type=submit]:hover {

@@ -97,8 +97,6 @@ const carousel = document.querySelector('.carousel');
       return false;
     }
 
-    // Optionally, you can add more specific checks, such as name length, etc.
-
     return true; // Allow form submission if all checks pass
   });
 emailjs.init("dhazelle@hotmail.com");
@@ -119,8 +117,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     document.getElementById('error-message').textContent = 'Please fill out all fields.';
     return false;
   }
-
-  // Optionally, you can add more specific checks, such as name length, etc.
 
   return true; // Allow form submission if all checks pass
 });

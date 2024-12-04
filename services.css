@@ -442,29 +442,79 @@ a::after {
 
 .carousel-container {
     position: relative;
-    width: 2500px;
-    max-width: 800px;
+    width: 800px;
+    max-width: 2500px;
     overflow: hidden; /* Hide the cards that are out of view */
 }
 
 .carousel {
     display: flex;
     transition: transform 0.3s ease;
+    width: 1060px;
 }
 
 .carousel-card {
-    background: #fff;
-    border-radius: 8px;
+    background: #F05757;
+    color: #ffffff;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 10px;
-    width: 2500px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     height: 600px;
+    width: 1000px;
+}
+
+.carousel-card-2 {
+    background: #F6CBD2;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    width: 1000px;
+}
+
+.carousel-card-3 {
+    background: #9ECAE7;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    width: 1000px;
+}
+
+.carousel-card-4 {
+    background: #2D457D;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    width: 1000px;
 }
 
 .carousel-card h3 {
@@ -479,15 +529,96 @@ a::after {
 
 .carousel-card button {
     padding: 8px 16px;
-    background-color: #007BFF;
+    background-color: #B71717;
     color: white;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid #B71717;
+    border-radius: 25px;
     cursor: pointer;
+    width: 200px;
+    font-family: 'Gruppo';
 }
 
 .carousel-card button:hover {
-    background-color: #0056b3;
+    background-color: #F05757;
+    border: 1px solid #B71717;
+}
+
+.carousel-card-2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.carousel-card-2 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.carousel-card-2 button {
+    padding: 8px 16px;
+    background-color: #CB8F99;
+    color: white;
+    border: 1px solid #CB8F99;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 200px;
+    font-family: 'Gruppo';
+}
+
+.carousel-card-2 button:hover {
+    background-color: #F6CBD2;
+    border: 1px solid #CB8F99;
+}
+
+.carousel-card-3 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.carousel-card-3 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.carousel-card-3 button {
+    padding: 8px 16px;
+    background-color: #7AA9C8;
+    color: white;
+    border: 1px solid #7AA9C8;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 200px;
+    font-family: 'Gruppo';
+}
+
+.carousel-card-3 button:hover {
+    background-color: #9ECAE7;
+    border: 1px solid #7AA9C8;
+}
+
+.carousel-card-4 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.carousel-card-4 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.carousel-card-4 button {
+    padding: 8px 16px;
+    background-color: #203158;
+    color: white;
+    border: 1px solid #203158;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 200px;
+    font-family: 'Gruppo';
+}
+
+.carousel-card-4 button:hover {
+    background-color: #2D457D;
+    border: 1px solid #203158;
 }
 
 /* Scroll Buttons */
