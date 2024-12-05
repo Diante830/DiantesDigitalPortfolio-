@@ -429,6 +429,7 @@ a::after {
   background-color: transparent;
   border: 1px solid #2D457D;
   scroll-behavior: smooth;
+  transition: all 0.2s ease-in-out;
 }
 
 #myBtn:hover {

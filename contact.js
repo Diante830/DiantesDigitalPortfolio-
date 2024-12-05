@@ -1,10 +1,3 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
 function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle("dark-mode");
@@ -126,3 +119,27 @@ document
 
     return true; // Allow form submission if all checks pass
   });
+
+
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    //----- open only one menu --------------
+    const active = document.querySelector(".btn.open");
+    if (active && active !== this) {
+      active.nextElementSibling.style.height = 0;
+      active.classList.remove("open");
+    }
+    //------------------------------------------------
+
+    this.classList.toggle("open");
+    const content = this.nextElementSibling;
+    if (this.classList.contains("open")) {
+      content.style.height = content.scrollHeight + "px";
+    } else {
+      content.style.height = 0;
+    }
+  });
+});
+
