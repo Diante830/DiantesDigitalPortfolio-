@@ -445,12 +445,14 @@ a::after {
     width: 800px;
     max-width: 2500px;
     overflow: hidden; /* Hide the cards that are out of view */
+    overflow: scroll;
 }
 
 .carousel {
     display: flex;
     transition: transform 0.3s ease;
     width: 1060px;
+    position: relative;
 }
 
 .carousel-card {
@@ -621,27 +623,23 @@ a::after {
     border: 1px solid #203158;
 }
 
-/* Scroll Buttons */
-.scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
+.carousel-container::-webkit-scrollbar {
+    width: 1px;
+    background-color: none;
 }
 
-.scroll-button.left {
-    left: 10px;
+/* Track */
+.carousel-container::-webkit-scrollbar-track {
+    background: none;
 }
 
-.scroll-button.right {
-    right: 10px;
+/* Handle */
+.carousel-container::-webkit-scrollbar-thumb {
+    background: #e2e2e2;
+    border-radius: 25px;
 }
 
-.scroll-button:focus {
-    outline: none;
+/* Handle on hover */
+.carousel-container::-webkit-scrollbar-thumb:hover {
+    background: #2D457D;
 }
