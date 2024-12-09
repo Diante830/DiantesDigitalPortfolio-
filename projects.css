@@ -45,6 +45,47 @@ body.dark-mode {
   color: #ffffff;
 }
 
+body.dark-mode h1 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h2 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h3 {
+  color: #9ECAE7;
+}
+
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode hr {
+  color: #ffffff;
+}
+
+body.dark-mode button {
+  color: #ffffff;
+}
+
+body.dark-mode #myBtn {
+  color: white; /* Light text color */
+}
+
+/* Hover effect for the button in dark mode */
+body.dark-mode #myBtn:hover {
+  background-color: #9ECAE7;
+}
+
+body.dark-mode nav.project-category a {
+  color: #9ECAE7; 
+}
+
+body.dark-mode nav.project-category a i {
+  color: #9ECAE7; 
+}
+
 .toggle-button {
   position: fixed;
   left: 40px;

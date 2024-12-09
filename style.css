@@ -45,6 +45,30 @@ body.dark-mode {
   color: #ffffff;
 }
 
+body.dark-mode h1 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h2 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h3 {
+  color: #9ECAE7;
+}
+
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode hr {
+  color: #ffffff;
+}
+
+body.dark-mode button {
+  color: #ffffff;
+}
+
 .toggle-button {
   position: fixed;
   left: 40px;
@@ -173,11 +197,7 @@ footer{
   word-wrap: break-word;
 }
 
-hr {
-  background-color: #dfdfdf;
-  margin-bottom: 35px;
-  margin-top: 10px;
-}
+
 
 /*Footer divs Css Ends*/
 
@@ -422,30 +442,3 @@ a::after {
   line-height: 90vh;
 }
 
-/*
-.splash.display-none{
-  position: fixed;
-  opacity: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #000000;
-  z-index: -10;
-  color: #ffffff;
-  text-align: center;
-  line-height: 90vh;
-  transition: all 0.5s;
-}
-
-@keyframes fadeIn {
-  to{
-    opacity: 1;
-  }
-}
-
-.fadein{
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
-}
-*/ 

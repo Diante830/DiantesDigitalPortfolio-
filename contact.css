@@ -50,6 +50,68 @@ body.dark-mode {
   color: #ffffff;
 }
 
+body.dark-mode h1 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h2 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h6 {
+  color: #9ECAE7;
+}
+
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode hr {
+  color: #ffffff;
+}
+
+body.dark-mode button {
+  color: #ffffff;
+}
+
+body.dark-mode nav.project-category a {
+  color: #ffffff; 
+}
+
+body.dark-mode nav.project-category a i {
+  color: #9ECAE7; 
+}
+
+body.dark-mode .container {
+  background-color: #9ECAE7; 
+}
+
+body.dark-mode input[type="text"], body.dark-mode input[type="email"], 
+body.dark-mode textarea, body.dark-mode select {
+    background-color: #444444; /* Dark background for input fields */
+    color: white; /* Light text color */
+    border: 1px solid #555555;
+}
+
+body.dark-mode input[type="submit"] {
+    background-color: #1f3160; /* Darker button color */
+    color: white;
+}
+
+body.dark-mode input[type="submit"]:hover {
+    background-color: #2d457d; /* Button hover effect in dark mode */
+}
+
+body.dark-mode #myBtn {
+  color: white; /* Light text color */
+}
+
+/* Hover effect for the button in dark mode */
+body.dark-mode #myBtn:hover {
+  background-color: #9ECAE7;
+}
+
+
 main{
   display: flex; 
   justify-content: center;
