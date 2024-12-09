@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <link rel="icon" type="image/x-icon" href="./images/Email Sig Logo white.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.0/p5.min.js">
+    <link rel="stylesheet" href="./portfolio.css">
+    <script src="./next.js"></script>
+</head>
+
+<body class="light-mode">
+
+    <input type="checkbox" id="ham-menu">
+    <label for="ham-menu"> MENU </label>
+    <div class="hide-des">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+
+        <div id="moon-icon">
+        <button class="toggle-button" onclick="toggleDarkMode()">
+
+            <svg width="30" height="30">
+                <path fill="currentColor" d="
+                M 23, 5
+                A 12 12 0 1 0 23, 25
+                A 12 12 0 0 1 23, 5" />
+            </svg>
+
+        </button>
+        </div>
+    </div>
+    
+    
+
+    </label>
+    <div class="full-page-green"></div>
+    <div class="ham-menu">
+        <ul class="centre-text bold-text">
+            <li><a href="./index.html" id="menulinks">home</a></li>
+            <li><a href="./portfolio.html" id="menulinks">portfolio</a></li>
+            <li><a href="./about.html" id="menulinks">about</a></li>
+            <li><a href="./services.html" id="menulinks">services</a></li>
+            <li><a href="./contact.html" id="menulinks">contact</a></li>
+            <li><a href="https://www.apple.com/ca/app-store/" id="menulinks">Burnsby App</a></li>
+        </ul>
+    </div>
+
+    <h1>portToLio</h1>
+
+    <nav class="project-category">
+      <ul>
+        <li><a href="./portfolio.html">All</a></li>
+          <li><a href="./design.html">Design</a></li>
+          <li><a href="./ux.html">UX & UI</a></li>
+          <li><a href="./web.html">Web Design</a></li>
+      </ul>
+  </nav>
+
+    <main>
+        <section id="projects" class="projects">
+            <div class="container">
+              <div class="project-cards">
+
+              <!-- Project Card 10 -->
+              <div class="card">
+                <a href="./foliowebimage/Olivia's Cupcakes.htm" target="_blank">
+                  <img src="./folioimages/Olivias Cupcakes.png" alt="Project 2">
+                  <div class="hover-text">Olivia's Cupcakes Website<br>2024</div>
+                </a>
+              </div>
+
+              <!-- Project Card 11 -->
+              <div class="card">
+                <a href="https://example.com/project2" target="_blank">
+                  <img src="./folioimages/DesignStore.png" alt="Project 2">
+                  <div class="hover-text">Design Store Website<br>2024</div>
+                </a>
+              </div>
+
+              <!-- Project Card 12 -->
+              <div class="card">
+                <a href="./foliowebpages/burnsby.html" target="_blank">
+                  <img src="./folioimages/Burnsbyappwebsite.png" alt="Project 2">
+                  <div class="hover-text">Burnsby App Website<br>2024</div>
+                </a>
+              </div>
+
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <center>
+        <footer>
+            <div id="linebreak">
+                <hr>
+            </div>
+            <div id="footer-links">
+                <img id="footer-image" src="./images/Icon LOGO.png">
+                <div id="footer-pagelinks"><a href="./portfolio.html" id="custom-link">portfolio</a></div>
+                <div id="footer-pagelinks"><a href="./about.html" id="custom-link">about</a></div>
+                <div id="footer-pagelinks"><a href="./services.html" id="custom-link">services</a></div>
+                <div id="footer-pagelinks"><a href="./contact.html" id="custom-link">contact</a></div>
+                <div id="footer-pagelinks"><a href="https://www.apple.com/ca/app-store/" id="custom-link">Burnsby App</a></div>
+                <div id="linebreak">
+                    <hr>
+                </div>
+            </div>
+            <br>
+            <div id="footer-contact">
+                Contact Me<br />dhazelle@hotmail.com</div>
+            <div id="footer-copyright">
+                © 2024 Diante Hazelle-Mclean Portfolio. All Rights Reserved</div>
+            <a href="https://www.behance.net/dhazelle" class="fa fa-behance" id="social-media"></a>
+            <a href="https://www.linkedin.com/in/diante-hazelle-mclean-51916b221" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://youtube.com/@d.h.m9082?si=whgrwzdSC3TYi3Sn" class="fa fa-youtube"></a>
+        </footer>
+    </center>
+</body>
+
+</html>
