@@ -74,11 +74,12 @@ ul.b {
 h1{
     text-align: center;
     color: #2D457D; 
-    font-size: 280px; 
+    font-size: 20vw; 
     font-family: "Harabara"; 
     font-weight: 100; 
     word-wrap: break-word;
     letter-spacing: -15px;
+    margin: 0;
 }
 
 h3{
@@ -93,6 +94,15 @@ h5 {
     font-family: "Gruppo-Regular";
     text-align: center;
 }
+
+h6{
+  text-align: center;
+  color: #2D457D;   
+  font-weight: 100;
+  font-size: 16px; 
+  word-wrap: break-word;
+}
+
 
 .toggle-button {
   position: fixed;
@@ -526,6 +536,7 @@ input[type=text], select, textarea {
     border-radius: 30px;
     background-color: #F05757;
     padding: 50px;
+    margin-top: 300px;
     color: #ffffff;
     font-family: "Harabara";
     font-size: 20px;
@@ -588,6 +599,33 @@ input[type=text], select, textarea {
   background-color: none;
   color: #F05757;
   border: 1px solid #F05757;
+}
+
+/* project category nav bar css*/ 
+
+.project-category {
+  padding: 10px 0;
+}
+
+.project-category ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.project-category ul li {
+  margin: 0 15px;
+}
+
+.project-category ul li a {
+  color: #2D457D;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.project-category ul li a:hover {
+  color: #F05757; 
 }
 
 

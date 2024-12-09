@@ -94,6 +94,7 @@ h1{
   font-weight: 100; 
   word-wrap: break-word;
   letter-spacing: -15px;
+  margin: 0;
 }
 
 h2 {

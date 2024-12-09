@@ -51,11 +51,23 @@ main{
 h1 {
     text-align: center;
     color: #2D457D;
-    font-size: 280px;
+    font-size: 20vw;
     font-family: "AfterisMoghu-Demo";
     font-weight: 400;
     word-wrap: break-word;
     letter-spacing: -20px;
+    margin: 0;
+}
+
+.info-section {
+    display: inline;
+    font-size: 1.0rem;
+    line-height: 1.0em;
+    word-spacing: 0.2em;
+    letter-spacing: 0.1em;
+    font-family: "Gruppo-Regular";
+    padding-top: 20%; 
+    margin-top: 50%; 
 }
 
 .toggle-button {
@@ -360,16 +372,6 @@ p {
     font-family: "Gruppo-Regular";
 }
 
-.info-section {
-    display: inline;
-    font-size: 1.0rem;
-    line-height: 1.0em;
-    word-spacing: 0.2em;
-    letter-spacing: 0.1em;
-    font-family: "Gruppo-Regular";
-}
-
-
 #menulinks {
     font-size: 1.6rem;
     line-height: 1.5em;
@@ -643,3 +645,29 @@ a::after {
 .carousel-container::-webkit-scrollbar-thumb:hover {
     background: #2D457D;
 }
+
+/* scroll button*/
+
+#myBtn {
+  font-size: 180px;
+  font-family: "AfterisMoghu-Demo";
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: #2D457D;
+  cursor: pointer;
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #2D457D;
+  scroll-behavior: smooth;
+  transition: all 0.2s ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: none;
+  color: #F05757;
+  border: 1px solid #F05757;
+}
+
