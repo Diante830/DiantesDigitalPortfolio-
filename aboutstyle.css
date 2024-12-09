@@ -40,6 +40,24 @@ body.dark-mode {
   color: #ffffff;
 }
 
+body.dark-mode h1 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h2 {
+  color: #9ECAE7;
+}
+
+body.dark-mode h3 {
+  color: #9ECAE7;
+}
+
+body.dark-mode a {
+  color: #ffffff;
+}
+
+
+
 h1{
   text-align: center;
   color: #2D457D; 
@@ -47,7 +65,9 @@ h1{
   font-family: "Cirqua"; 
   font-weight: 400; 
   word-wrap: break-word;
+  margin-bottom: 11%;
 }
+
 
 h2{
   display: inline;
