@@ -110,7 +110,7 @@ document
 
     return true; // Allow form submission if all checks pass
   });
-emailjs.init("dhazelle@hotmail.com");
+emailjs.init("dmclean830@gmail.com");
 
 document
   .getElementById("contactForm")
