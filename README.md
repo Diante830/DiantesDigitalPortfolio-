@@ -24,7 +24,7 @@ Here are some of the technologies and tools I frequently work with:
 
 Feel free to reach out to me if you have any questions or would like to discuss potential collaborations:
 
-- **Email:** dhazelle@hotmail.com - 100953671@georgebrown.ca
+- **Email:** dmclean830@gmail.com - dhazelle@hotmail.com
 - **LinkedIn:** www.linkedin.com/in/diante-hazelle-mclean-51916b221
 - **Graphic Design Portfolio Website:** https://hazellemcleandesign.myportfolio.com/
 
